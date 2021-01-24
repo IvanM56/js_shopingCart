@@ -1,0 +1,149 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	position: absolute;
+    --top: 1%;
+    left: 5%;
+    right: 5%;
+    height: 100%;
+    border: 1px solid white;
+    box-shadow: 5px 10px 8px #8888;
+	font-family: 'Poppins', sans-serif;
+}
+
+
+/* CART BUTTON */
+.openCart {
+	position: absolute;
+    top: 5%;
+    right: 20%;
+}
+.openCart button {
+    background-color: white;
+    border: none;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+/* CART BUTTON ENDS */
+
+
+/* CART */
+.cart {
+    /* top, right, bottom, left */
+    --margin: 11% 17% 10% 45%;
+	position: absolute;
+	top: 15%;
+    left: 55%;
+    right: 20%;
+    box-shadow: 8px 5px 8px #8888;
+	width: 25%;
+	height: auto;
+	padding-top: 2%;
+	display: none;
+	flex-direction: column;
+	--overflow: hidden;
+}
+.cart p {
+	padding-left: 6%;
+}
+hr {
+    border-width: 1px; 
+    border-color: rgba(236, 240, 241, 1);
+}
+.productsContainer {
+	margin-top: 5%;
+    margin-left: 6%;
+    margin-right: 6%;
+	height: 348px;
+	overflow: hidden;
+}
+.products {
+	transition: transform 0.5s;
+	--border: 1px solid blue;
+}
+.product {
+    display: flex;
+	padding: 10px 0px 10px; 
+	height: 114px;
+}
+.attributes {
+    margin-left: 40px;
+    word-break: break-all;
+}
+.attributes p, h5, br {
+    margin: 0;
+}
+.middleAttributes {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 100%;
+    color: gray;
+}
+/* CART ENDS */
+
+
+/* NAVIGATION BUTTONS */
+#up, #down {
+	margin-right: 6%;
+    margin-left: 6%;
+}
+#down {
+	margin-top: 5%;
+}
+/* NAVIGATION BUTTONS END */
+
+
+/* ACTION BUTTONS */
+.buttons {
+    display: flex;
+	padding-top: 2%;
+	margin-right: 4.5%;
+    margin-left: 4.5%;
+}
+#checkoutButton, #editButton{
+    padding: 12px 20px;
+    text-align: center;
+    font-size: 12px;
+    cursor: pointer;
+    margin-top: 4%;
+    margin-bottom: 8%;
+}
+#checkoutButton {
+    background-color: green;
+    border: 1px solid green;
+    color: white;
+    margin-right: 2%;
+    margin-left: 3%;
+    flex: 1.7;
+}
+#editButton {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    margin-left: 2%;
+    flex: 1;
+}
+/* ACTION BUTTONS END */
+
+
+/* VARIOUS SCREENS */
+@media screen and (max-width: 320px), (max-width: 768px), (max-width: 992px), (max-width: 1200px) {
+  .cart {
+	position: absolute;
+    left: 8%;
+    width: 80%;
+	font-size: 11px;
+  }
+}
+/* VARIOUS SCREENS END*/
+
+
+
+
+
+
